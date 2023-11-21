@@ -1,0 +1,148 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>   
+
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  /* background-color: #f2f2f2;     */
+  padding: 20px;    
+  margin-left: 150px;
+  margin-right: 150px;
+  resize: horizontal;
+  /* overflow: auto; */
+  background-color: #7fb0b375;  
+  /* opacity: .6; */
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;  
+  font-size: 20px;              /*added*/
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+
+body {
+  background-image: url("crime logo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  
+}
+h2 b{                               /*added*/
+  color: aquamarine;
+  font-size: 30px;
+}
+.inputfield b{
+  color: rgb(13, 15, 14);
+  font-size: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
+</style>    
+</head> 
+
+<body>    
+<h2><b>NEW FIR REGISTER</b></h2> <br>   
+<div class="container">    
+  <form action="lastpage.html">               
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">crime id</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="crimeid.." style="width:150px">    
+      </div>    
+    </div>    
+    <!-- <div class="row">    
+      <div class="col-25">    
+        <label for="lname">timestamp</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="timestamp..">    
+      </div>    
+    </div>     -->
+     
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">enter description</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="description about the case here.." style="height:90px"></textarea>    
+      </div>    
+    </div>  
+    <!-- <br/> -->
+    <div class="inputfield">
+      <label><b>Upload file</b></label>
+      <!-- <img src="crime.jpg" alt="evidence" -->
+      <input type="file" class="input">
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"><b> audio</b></label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2"><b> video</b></label>
+        <input type="checkbox" id="vehicle2" name="vehicle3" value="auto">
+        <label for="vehicle3"><b> image</b></label>
+
+   </div> 
+   <img src="Evidence.jpg" alt="evidence" width="250" height="100">  
+    <div class="row">    
+      <input type="submit" value="Submit" onclick="lastpage.html">    
+    </div>    
+  </form>   
+  
+</div> 
+   
+</body>    
+</html>    

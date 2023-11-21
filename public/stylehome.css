@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+
+	background-image: url("crime3.jpg");
+    /* background-size: cover ; */
+	/* opacity: 0.3; */
+	/* background-size: 50px, 130px, auto; */
+	/* background: no-repeat; */
+	 /* height: 250px; */
+  		/* position: relative;  */
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	/* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(crime.jpeg); */
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%; 
+	margin: 1% 1%;
+	
+		/* display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 1024px;
+		height: 50%;
+		background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("crime.jpg");   */
+}
+
+ .welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 12% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+    top:50px;							/*crime evidence text*/
+    position: relative;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+} 
+.welcome-text h1 span {
+	/* color: #00fe4c; */
+	color: #cfee44;
+	
+}
+.welcome-text a {		
+	
+	/* border: 1px solid rgb(19, 122, 27);	 */
+
+	border: 1px solid #fff;					/*for login button*/
+	padding: 10px 25px;						/*login box size*/
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 225px;				/*login button placing from above text*/
+	display: inline-block;
+	/* color: #fff; */
+	color: rgb(168, 50, 14);
+	position: fixed;
+	left: 640px;				/*center */	
+} 
+ .welcome-text a:hover {
+	/* background: #fff; */
+	background: rgb(49, 74, 216);
+	color: #333;
+} 
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: 10;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
