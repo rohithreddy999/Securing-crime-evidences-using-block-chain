@@ -1,0 +1,300 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+ 
+
+* {    
+  box-sizing: border-box;    
+}  
+
+
+/* 
+--------------------------------------------------
+
+Header
+------------------------------------------------- */
+
+#header{
+  overflow: hidden;
+  background-color: #b31313;
+  padding: 10px 5px;
+}
+
+#logoname
+{
+  color: #ffffff;
+  float: left;
+  padding-top: -15px;
+}
+#logo{
+  float: left;
+  width:60px;
+  height:50px;
+}
+
+#header a {
+  float:right;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1px;
+  border-radius: 20px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+#header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+#header a:hover {
+  background-color: #252525;
+  color: rgb(248, 55, 7);
+}
+
+#address{
+  background-color: #b31313;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* Style the active/current link*/
+#header a.active {
+  background-color: rgb(248, 55, 7);
+  color: white;
+}
+
+/* Float the link section to the right */
+#header-right {
+  float: right;
+}
+
+#header-left {
+  float: left;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  #header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #header-right {
+    float: none;
+  }
+}
+
+
+/* --------------------------------------
+
+Table
+------------------------------------- */
+#eth {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#eth td, #eth th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#eth tr:nth-child(even){background-color: #f2f2f2;}
+
+#eth tr:hover {background-color: #ddd;}
+
+#eth th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fc473a;
+  color: white;
+}
+
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+      
+ 
+
+button {
+  background-color: #ffcf76;  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+
+button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(255, 0, 0, 0.24),0 17px 50px 0 rgba(255, 0, 0, 0.19);
+}
+    
+input[type=submit]:hover {    
+  background-color: #a06e45;    
+}    
+    
+#container {    
+  margin-top: 150px;
+  border-radius: 5px;    
+  padding: 20px;    
+  margin-left: 150px;
+  margin-right: 150px;
+  resize: horizontal;
+  background-color: #7fb0b375;  
+}    
+    
+#col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;  
+  font-size: 20px;              /*added*/
+}    
+    
+#col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+#row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+
+body {
+  background-image: url('DigitalForensics.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 400%;
+  
+}
+h2 b{                               /*added*/
+  color: aquamarine;
+  font-size: 30px;
+}
+.inputfield b{
+  color: rgb(13, 15, 14);
+  font-size: 20px;
+}
+
+/* -----------------------------------------------------
+
+Pop-up On submit
+----------------------------------------------------- */
+
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+ 
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
+}
